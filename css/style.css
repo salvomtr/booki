@@ -7,10 +7,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 header img {
-    height: 30px;
+    height: 30px;   
 }
 
 header nav ul {
@@ -24,7 +25,11 @@ header nav ul {
 header nav a:hover {
     color: var(--main-color);
     border-top: 3px solid var(--main-color);
-    padding-top: 15px;
+    padding-top: 11px;
+}
+
+.sous-titre{
+    padding-bottom: 25px;
 }
 
 form {
@@ -44,13 +49,20 @@ form .fa-location-dot {
 }
 
  i.fa-location-dot{
-    color: red;
+    color: black;
 }
 
 form input {
     flex: 1;
     border: none;
     outline: none;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 7%;
+}
+
+form input::placeholder {
+    color: black;
 }
 
 .search-button {
@@ -60,9 +72,37 @@ form input {
     border-bottom-right-radius: 15px;
     height: 100%;
     border:none;
-    padding: 19px ;
-    font-size: 13px;
+    padding: 17px ;
+    font-size: 17px;
     font-weight: bold;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 25px;
+}
+
+.filtres-button {
+    display: flex;
+    gap: 15px;
+    
+}
+
+.filtres-button button{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 25px;
+    padding: 10px 18px ;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.filtres-button button i{
+    font-size: large;
 }
 
 :root {
