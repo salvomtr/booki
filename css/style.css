@@ -195,7 +195,13 @@ a {
 }
 
 .hebergements-cards a {
-    flex: 0 0 30%;
+    flex: 1 1 30%;
+}
+
+.afficher-plus {
+    font-weight: bold;
+    padding-top: 15px;
+    display: block;
 }
 
 /****** Populaires ***********/
